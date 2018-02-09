@@ -50,13 +50,11 @@ class HomeViewController: UIViewController {
         if (segue.identifier == "AddTime") {
             let destinationVC = segue.destination as! UINavigationController
             let targetController = destinationVC.topViewController as! AddTimeViewController
-            
             // ADD CODE: Get the data ready to send over to the next controller by setting the fields over in the AddTimeViewController
-            timeLabelStr = elapsedTimeLabel.text!
-            targetController.timeLabel.text! = timeLabelStr
-            //print("time is: " , elapsedTimeLabel.text)
 
+            targetController.stringPassed = elapsedTimeLabel.text!
             
+            timeLabelStr = elapsedTimeLabel.text!
         }
 
     }

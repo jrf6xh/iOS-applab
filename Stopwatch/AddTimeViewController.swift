@@ -10,12 +10,14 @@ import UIKit
 
 class AddTimeViewController: UIViewController {
     
-    var timeLabelStr2:String = "BLANK"
+    var stringPassed = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        timeLabel.text = stringPassed
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,8 +29,8 @@ class AddTimeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    @IBOutlet weak var timeLabel: UILabel!
     
+    @IBOutlet weak var timeLabel: UILabel!
     
     
     @IBAction func fakeSave(_ sender: Any) {

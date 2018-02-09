@@ -74,7 +74,7 @@
                     <navigationItem key="navigationItem" id="tEP-tr-uGb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KTG-qr-Os9">
                             <connections>
-                                <action selector="buttonTapped:" destination="BYZ-38-t0r" id="hVI-3O-nUo"/>
+                                <action selector="goToAddView:" destination="BYZ-38-t0r" id="b08-bl-JGU"/>
                                 <segue destination="xNG-wO-bon" kind="presentation" identifier="AddTime" id="WFI-kk-gDI"/>
                             </connections>
                         </barButtonItem>
@@ -108,7 +108,7 @@
                                     <action selector="fakeSave:" destination="6N5-Df-7Q3" eventType="touchUpInside" id="aGq-3P-y6d"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-lG-zX4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww7-lG-zX4">
                                 <rect key="frame" x="68" y="112" width="236" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -127,7 +127,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="timeLabel" destination="Ww7-lG-zX4" id="haI-iB-gcs"/>
+                        <outlet property="timeLabel" destination="Ww7-lG-zX4" id="OpK-GO-Ct6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YId-MD-5bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
